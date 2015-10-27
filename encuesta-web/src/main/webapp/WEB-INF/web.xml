@@ -1,0 +1,63 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mentoring.proyectos.escuesta.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<servlet-class>com.mentoring.proyectos.escuesta.web.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>NuevoUsuarioServlet</servlet-name>
+  	<servlet-class>com.mentoring.proyectos.escuesta.web.usuario.NuevoUsuarioServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GuardaUsuario</servlet-name>
+  	<servlet-class>com.mentoring.proyectos.escuesta.web.usuario.GuardaUsuarioServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UsuariosServlet</servlet-name>
+  	<display-name>UsuariosServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mentoring.proyectos.escuesta.web.usuario.UsuariosServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditarUsuario</servlet-name>
+  	<display-name>EditarUsuario</display-name>
+  	<description></description>
+  	<servlet-class>com.mentoring.proyectos.escuesta.web.usuario.EditarUsuarioServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/login.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/logout.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>NuevoUsuarioServlet</servlet-name>
+  	<url-pattern>/nuevoUsuario.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GuardaUsuario</servlet-name>
+  	<url-pattern>/saveUsuario.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UsuariosServlet</servlet-name>
+  	<url-pattern>/usuarios.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditarUsuario</servlet-name>
+  	<url-pattern>/editarUsuario.do</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
